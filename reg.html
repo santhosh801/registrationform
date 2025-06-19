@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
+    <style>
+        .register-box input[type="text"],
+        .register-box input[type="tel"],
+        .register-box input[type="email"],
+        .register-box input[type="number"],
+        .register-box input[type="date"],
+        .register-box input[type="time"],
+        .register-box select {
+            height: 29px;
+            font-size: 14px;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+    </div>
+    <div class="register-box">
+        <h2>Show Booking Registration</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required placeholder="Enter your state">
+            </div>
+            <div class="checkbox-group">
+                <label>Gender</label>
+                <div class="gender-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                    <label><input type="radio" name="gender" value="prefer_not_say"> Prefer not to say</label>
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <label>Show Preferences</label>
+                <label><input type="checkbox" name="preference" value="VIP"> VIP Seat</label>
+                <label><input type="checkbox" name="preference" value="Snacks"> Snacks Included</label>
+                <label><input type="checkbox" name="preference" value="Parking"> Parking Pass</label>
+            </div>
+            <div class="form-group">
+                <label for="showdate">Show Date</label>
+                <input type="date" id="showdate" name="showdate" required>
+            </div>
+            <div class="form-group">
+                <label for="showtime">Show Time</label>
+                <input type="time" id="showtime" name="showtime" required>
+            </div>
+            <div class="form-group">
+                <label for="tickets">Number of Tickets</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
