@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
+    <title>Career Coach Registration</title>
     <link rel="stylesheet" href="reg.css">
     <style>
         .register-box input[type="text"],
@@ -27,15 +27,19 @@
         <div class="rect2"></div>
     </div>
     <div class="register-box">
-        <h2>Show Booking Registration</h2>
+        <h2>Career Coaching Registration</h2>
         <form>
             <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
             </div>
             <div class="form-group">
                 <label for="country">Country</label>
@@ -61,28 +65,24 @@
                 </div>
             </div>
             <div class="checkbox-group">
-                <label>Show Preferences</label>
-                <label><input type="checkbox" name="preference" value="VIP"> VIP Seat</label>
-                <label><input type="checkbox" name="preference" value="Snacks"> Snacks Included</label>
-                <label><input type="checkbox" name="preference" value="Parking"> Parking Pass</label>
+                <label>Coaching Interests</label>
+                <label><input type="checkbox" name="interest" value="Resume"> Resume Building</label>
+                <label><input type="checkbox" name="interest" value="Interview"> Interview Training</label>
+                <label><input type="checkbox" name="interest" value="CareerPath"> Career Path Guidance</label>
             </div>
             <div class="form-group">
-                <label for="showdate">Show Date</label>
-                <input type="date" id="showdate" name="showdate" required>
+                <label for="sessiondate">Preferred Session Date</label>
+                <input type="date" id="sessiondate" name="sessiondate" required>
             </div>
             <div class="form-group">
-                <label for="showtime">Show Time</label>
-                <input type="time" id="showtime" name="showtime" required>
+                <label for="sessiontime">Preferred Session Time</label>
+                <input type="time" id="sessiontime" name="sessiontime" required>
             </div>
             <div class="form-group">
-                <label for="tickets">Number of Tickets</label>
-                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+                <label for="experience">Years of Experience</label>
+                <input type="number" id="experience" name="experience" min="0" max="40" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-            </div>
-            <button type="submit" class="register-btn">Register</button>
+            <button type="submit" class="register-btn">Register Now</button>
         </form>
     </div>
 </body>
